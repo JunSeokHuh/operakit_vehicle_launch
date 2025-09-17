@@ -1,0 +1,33 @@
+/**:
+    ros__parameters:
+        # 매뉴얼 7p 타이어 사이즈(215/45R17)로 계산. 
+        #(타이어단면높이*2 + 휠지름) / 2 -> {편평비*타이어폭*2 + 휠지름(inch)*25.4mm} / 2
+        #(0.45*215mm*2 + 17inch*25.4mm/1inch) / 2 = 625.3mm / 2 = 312.65mm
+        wheel_radius: 0.313 # The radius of the wheel, primarily used for dead reckoning.
+
+        # 타이어 사이즈(215/45R17)의 폭. 215mm
+        wheel_width: 0.215 # The lateral width of a wheel tire, primarily used for dead reckoning.
+
+        # 매뉴얼 25p 휠베이스. 1900mm
+        wheel_base: 1.9 # between front wheel center and rear wheel center
+
+        # 매뉴얼 25p 휠 트랙. 1465mm
+        wheel_tread: 1.465 # between left wheel center and right wheel center
+
+        # 매뉴얼 25p 전면 오버행. 237mm
+        front_overhang: 0.237 # between front wheel center and vehicle front
+
+        # 매뉴얼 25p 후면 오버행. 237mm
+        rear_overhang: 0.237 # between rear wheel center and vehicle rear
+
+        # (전체 폭 1700mm - 휠 트랙 1465mm) / 2 = 117.5mm
+        left_overhang: 0.1175 # between left wheel center and vehicle left
+
+        # (전체 폭 1700mm - 휠 트랙 1465mm) / 2 = 117.5mm
+        right_overhang: 0.1175 # between right wheel center and vehicle right
+
+        # 매뉴얼 28p 전체 높이. 646mm
+        vehicle_height: 0.646
+
+        # 매뉴얼 25p 최대 조향각 30도 -> 라디안 변환
+        max_steer_angle: 0.5236 # [rad]
